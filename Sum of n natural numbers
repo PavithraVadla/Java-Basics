@@ -1,0 +1,26 @@
+This simple Java program calculates the sum of the first n natural numbers (including 0).
+It takes an integer input n from the user and uses a for loop to compute the sum from 0 to n
+
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner (System.in);
+        int n=sc.nextInt();
+        int sum=0;
+        for(int i=0;i<n+1;i++){
+            sum=sum+i;
+        }
+        System.out.println(sum);
+        
+    }
+    
+}
+
+
+Example
+5
+Output:
+15
+
+Explanation: 0 + 1 + 2 + 3 + 4 + 5 = 15
