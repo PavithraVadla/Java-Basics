@@ -17,3 +17,11 @@ public class Fact {
         System.out.println("Factorial of " + n + " is " + fact);
     }
 }
+
+
+
+Input:
+Enter a number
+5
+Output:
+Factorial of 5 is 120
