@@ -1,0 +1,35 @@
+Takes salary input from the user.
+Based on the salary amount, it applies basic tax rules:
+No tax for salary less than ₹5,00,000
+20% tax for salary between ₹5,00,000 and ₹10,00,000
+10% tax (incorrectly applied – see note below) if salary is greater than ₹5,00,000 or less than ₹10,00,000
+
+
+import java.util.*;
+public class Salary {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        long s=sc.nextLong();
+        if(s<500000){
+            System.out.println("no tax");
+        }
+        else if(s<1000000){
+            System.out.println("20% tax");
+            System.out.println("Your tax amount is "+ (s*20)/(100));
+        }
+        else if(s>500000 || s<1000000){
+            System.out.println("10% tax");
+            System.out.println("Your tax amount is "+ (s*10)/(100));
+            
+        }
+        
+    }
+}
+
+
+Input
+5000000
+
+Output
+10% tax
+Your tax amount is 500000
